@@ -3,8 +3,6 @@ import React, { useState } from "react";
 export function TrafficLight() {
 	const [color, setColor] = useState("");
 
-	
-
 	return (
 		<div className="container">
 			<div
@@ -19,7 +17,7 @@ export function TrafficLight() {
 				className={
 					color == "green" ? "light green clicked" : "light green"
 				}
-				onClick={() => SetColor("green")}></div>
+				onClick={() => setColor("green")}></div>
 		</div>
 	);
 }
